@@ -1,0 +1,15 @@
+---
+- name: Install pciutils
+  package: name=pciutils
+- name: Install tar
+  package: name=tar
+- name: Install unzip/zip/bzip2
+  package: name=unzip,zip,bzip2
+- name: Install shell completion
+  package:
+    name: bash-completion
+- name: Ensure local_user is present
+  user:
+    name: "{{ local_user }}"
+    password: "{{ local_user_password }}"
+  when: local_user is defined

@@ -1,0 +1,11 @@
+---
+dependencies:
+  - { role: packages-managed }
+  - { role: firewalld }
+  - { role: ssh-server }
+  - { role: tune-swap }
+  - { role: time }
+  - { role: monitor }
+  - { role: cron-runner }
+  - { role: net-configs }
+  - { role: net-tools }
