@@ -1,7 +1,6 @@
 ---
 dependencies:
   - { role: packages-managed }
-  - { role: firewalld }
   - { role: ssh-server }
   - { role: tune-swap }
   - { role: time }
