@@ -12,4 +12,6 @@
   user:
     name: "{{ local_user }}"
     password: "{{ local_user_password }}"
+    groups: wheel
+    append: yes
   when: local_user is defined
