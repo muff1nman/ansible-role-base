@@ -5,6 +5,7 @@ dependencies:
   - { role: tune-swap }
   - { role: time }
   - { role: monitor }
+  - { role: logrotate }
   - { role: cron-runner }
   - { role: net-configs }
   - { role: net-tools }
