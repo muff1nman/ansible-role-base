@@ -5,9 +5,6 @@
   package: name=tar
 - name: Install unzip/zip/bzip2
   package: name=unzip,zip,bzip2
-- name: Install shell completion
-  package:
-    name: bash-completion
 - name: Ensure local_user is present
   user:
     name: "{{ local_user }}"
